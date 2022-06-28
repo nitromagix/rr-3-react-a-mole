@@ -21,7 +21,7 @@ function MoleContainer(props) {
       trace("MoleContainer")("unmounted");
       clearTimeout(timer);
     };
-  });
+  }, [displayMole]);
 
   const moleOnClick = (e) => {
     trace("Mole")("onClick");
