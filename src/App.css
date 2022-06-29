@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   border: 1px solid grey;
-  max-width: 750px;
+  max-width: 760px;
   margin: 20px auto;
 }
 
@@ -9,9 +9,9 @@
 }
 .App > div > div {
   display: inline-block;
-  width: 100%;
-  max-width: 248px;
-  height: 200px;
+  width: 27vw;
+  max-width: 250px;
+  height: 100%;
   border: 1px solid grey;
 }
 
@@ -19,9 +19,15 @@
   display: inline-block;
   margin: auto;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
-  background: #61dafb;
+  width: 25vw;
+  max-width: 250px;
+  height: 100%;
+
+}
+
+.mole>img{
+   width: 100%;
+   /* margin:auto; */
 }
 
 .App-logo {

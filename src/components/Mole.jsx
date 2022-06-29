@@ -1,7 +1,10 @@
 //
 
 import { useState, useEffect } from "react";
+import MoleImage from '../mole.png'
+
 import trace from "../helper";
+
 
 function Mole(props) {
   const clickMe = (e) => {
@@ -9,7 +12,7 @@ function Mole(props) {
   }
   return (
     <div className="mole" onClick={props.moleOnClick}>
-      <span>Mole</span>
+      <img src={MoleImage} alt="Mole"/>
     </div>
   );
 }
