@@ -2,12 +2,13 @@
 
 import { useState, useEffect } from "react";
 import trace from "../helper";
+import EmptyImage from '../molehill.png'
 
 function Empty() {
   return (
-    <div>
-      <span>Empty</span>
-    </div>
+   <div className="empty">
+   <img src={EmptyImage} alt="Empty"/>
+ </div>
   );
 }
 

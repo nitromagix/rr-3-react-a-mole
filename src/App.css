@@ -1,8 +1,7 @@
 .App {
   text-align: center;
-  border: 1px solid grey;
   max-width: 760px;
-  margin: 20px auto;
+  margin: auto;
 }
 
 .App > div {
@@ -15,7 +14,7 @@
   border: 1px solid grey;
 }
 
-.mole {
+.mole, .empty {
   display: inline-block;
   margin: auto;
   cursor: pointer;
@@ -25,7 +24,7 @@
 
 }
 
-.mole>img{
+.mole>img, .empty>img{
    width: 100%;
    /* margin:auto; */
 }
