@@ -9,22 +9,22 @@ function MoleContainer(props) {
   const [displayMole, updateDisplayMole] = useState(false);
 
   useEffect(() => {
-    trace("MoleContainer")("mounted");
+   //  trace("MoleContainer")("mounted");
 
     const randomNumber = Math.floor(Math.random() * 2000);
     const timer = setTimeout(() => {
       updateDisplayMole(true);
     }, randomNumber);
-    trace("randomTime")(randomNumber);
+   //  trace("randomTime")(randomNumber);
 
     return () => {
-      trace("MoleContainer")("unmounted");
+      // trace("MoleContainer")("unmounted");
       clearTimeout(timer);
     };
   }, [displayMole]);
 
   const moleOnClick = (e) => {
-    trace("Mole")("onClick");
+   //  trace("Mole")("onClick");
 
     props.setScore(props.score + 1);
     updateDisplayMole(false);
