@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Mole from "./Mole";
 import Empty from "./Empty";
-import trace from "../helper";
+// import trace from "../helper";
 
 function MoleContainer(props) {
   const [displayMole, updateDisplayMole] = useState(false);
@@ -11,11 +11,11 @@ function MoleContainer(props) {
   useEffect(() => {
    //  trace("MoleContainer")("mounted");
 
-    const randomNumber = Math.floor(Math.random() * 2000);
+    const randomNumber = Math.floor(Math.random() * 5000);
     const timer = setTimeout(() => {
       updateDisplayMole(true);
     }, randomNumber);
-   //  trace("randomTime")(randomNumber);
+   //  trace("randomNumber")(randomNumber);
 
     return () => {
       // trace("MoleContainer")("unmounted");

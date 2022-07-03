@@ -1,8 +1,8 @@
 //
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import MoleContainer from "./components/MoleContainer";
-import trace from "./helper";
+// import trace from "./helper";
 
 import "./App.css";
 
@@ -11,16 +11,15 @@ function App() {
 
    const createMoleHills = () => {
       const hills = [];
-      for (let j = 0; j < 3; j++) {
-         for (let i = 0; i < 3; i++) {
+
+         for (let i = 0; i < 9; i++) {
             hills.push(
                <MoleContainer
-                  key={`${j}${i}`}
+                  key={i}
                   setScore={setScore}
                   score={score}
                />
             );
-         }
       }
       return <div>{hills}</div>;
    };
